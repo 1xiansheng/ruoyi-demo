@@ -46,16 +46,7 @@ public class JSON
         try
         {
             objectWriter.writeValue(os, value);
-        }
-        catch (JsonGenerationException e)
-        {
-            throw new Exception(e);
-        }
-        catch (JsonMappingException e)
-        {
-            throw new Exception(e);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new Exception(e);
         }
@@ -66,16 +57,7 @@ public class JSON
         try
         {
             return objectWriter.writeValueAsString(value);
-        }
-        catch (JsonGenerationException e)
-        {
-            throw new Exception(e);
-        }
-        catch (JsonMappingException e)
-        {
-            throw new Exception(e);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new Exception(e);
         }
@@ -86,16 +68,7 @@ public class JSON
         try
         {
             return objectWriter.writeValueAsBytes(value);
-        }
-        catch (JsonGenerationException e)
-        {
-            throw new Exception(e);
-        }
-        catch (JsonMappingException e)
-        {
-            throw new Exception(e);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new Exception(e);
         }
